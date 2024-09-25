@@ -1,0 +1,112 @@
+/* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #52B4B7;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        button {
+            padding: 12px 25px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #52B4B7, #549DB7);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: auto;
+            white-space: nowrap;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 16px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .paid {
+            background-color: #D4EDDA; /* Light green for paid */
+        }
+
+        .unpaid {
+            background-color: #F8D7DA; /* Light red for unpaid */
+        }
+
+        .status {
+            text-transform: capitalize;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .empty {
+            font-style: italic;
+            text-align: center;
+            color: #999;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter select {
+            padding: 10px;
+            font-size: 16px;
+        }

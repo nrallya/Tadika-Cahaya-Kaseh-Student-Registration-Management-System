@@ -1,0 +1,28 @@
+{
+    "name": "allya/paymentsystem",
+    "description": "A project handle payments using stripe",
+    "type": "project",
+    "require": {
+        "stripe/stripe-php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Allya",
+            "email": "nurallyanasyuha@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+sk_test_51PUoT9AzjBDvh5juTwsysoiGCmzHTK6iV4fRjcgm7IeLwhPe4hZWzXhS4O4ATS30GL41LNkV1GeFsmBKirCBSDbB001F5o78JX
+sk_test_51PUoT9AzjBDvh5juTwsysoiGCmzHTK6iV4fRjcgm7IeLwhPe4hZWzXhS4O4ATS30GL41LNkV1GeFsmBKirCBSDbB001F5o78JX
+
+stripe login --api-key sk_test_51PUoT9AzjBDvh5juTwsysoiGCmzHTK6iV4fRjcgm7IeLwhPe4hZWzXhS4O4ATS30GL41LNkV1GeFsmBKirCBSDbB001F5o78JX
+accountid stripe cli stripe login --api-key sk_test_51PUoT9AzjBDvh5juTwsysoiGCmzHTK6iV4fRjcgm7IeLwhPe4hZWzXhS4O4ATS30GL41LNkV1GeFsmBKirCBSDbB001F5o78JX
+scoop install <C:\Users\User\scoop\apps\stripe\1.20.0>

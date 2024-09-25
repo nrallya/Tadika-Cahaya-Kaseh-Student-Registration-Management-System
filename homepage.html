@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Background Website</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif; /* Set font family */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 100px 20px;
+      color: #fff; /* Set text color */
+      max-width: 800px; /* Limit width to control line breaks */
+      margin: 0 auto; /* Center horizontally */
+    }
+    h1 {
+      font-size: 4em; /* Increased font size */
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 0.5; /* Adjusted line height */
+      margin-bottom: 10px; /* Reduced margin between paragraphs */
+      text-align: justify; /* Justify text alignment */
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #549DB7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px; /* Adjusted margin to bring the button lower */
+    }
+    button:hover {
+      background-color: #52B4B7;
+    }
+    .social-icons {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-icons a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Container -->
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="advertisment.mp4" type="video/mp4">
+      <!-- Add additional sources for other formats if necessary -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>TADIKA CAHAYA KASEH</h1>
+    <p>Tadika Cahaya Kaseh provides a nurturing environment for young learners,</p>
+    <p>fostering creativity and holistic development through innovative educational practices.</p>
+    <button onclick="redirectToLogin()">Interested</button>
+  </div>
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/tadikacahayakaseh/?locale=ms_MY" target="_blank">
+      <img src="facebook.png" alt="Facebook">
+      <span>Find us here</span>
+    </a>
+  </div>
+
+  <!-- JavaScript for navigation -->
+  <script>
+    function redirectToLogin() {
+      window.location.href = 'login.php'; // Adjust the URL to your login page
+    }
+  </script>
+</body>
+</html>
